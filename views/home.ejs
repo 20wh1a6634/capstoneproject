@@ -1,0 +1,164 @@
+<html>
+		<head>
+			<title>Lady Bug's store</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width" initial-scale=1>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		</head>
+		<style>
+			div{
+				color: rgb(4, 10, 11);
+				text-align: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+				background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/09/All-White-Background-HD.jpg");
+			}
+			img{
+				height: 200px;
+                width: 180px;
+				padding-bottom: 20px;
+			}
+			button{
+				margin-top: 10px;
+			}
+		</style>
+        <body>
+			<div class="container mt-3">
+				<div class="row" >
+					<div class="col-lg-1"><i class="bi bi-list" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-house-door-fill" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-8"><h2 class="display-6" style="color:midnightblue;font-weight:500;">LADY BUG'S JEWEL</h2></div>
+					<div class="col-lg-1"><i class="bi bi-person-circle" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-cart-fill" style="font-size: 2rem;"></i></div>
+				</div><br>
+                <div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://cdn.shopify.com/s/files/1/1820/3473/products/image_9309f256-1152-48e6-926e-a116fdad5f8b_2048x.jpg?v=1571438636">
+						<b><br>Gemstone necklace</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1500/-"><br><button type="submit" class="btn btn-info" name="item" value="Gemstone necklace">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL0ZgUYmkv3K6ASvVR3SzXBKZ8xB7GfD0CkA&usqp=CAU" >
+						<b><br>Heart Pendant necklace</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="600/-"><br><button type="submit" class="btn btn-info" name="item" value="Heart Pendant necklace">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://cdn.shopify.com/s/files/1/0524/0969/products/Triere_Hairpins_grande.JPG?v=1459791678" >
+						<b><br>Triere_Hairpins_grande</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="200/-"><br><button type="submit" class="btn btn-info" name="item" value="Triere_Hairpins_grande">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://www.womenfitness.net/wp/wp-content/uploads/2020/02/Silver_Bracelets.jpg">
+						<b><br>Silver Bracelet</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="799/-"><br><button type="submit" class="btn btn-info" name="item" value="Silver Bracelet">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/510AnrPxvzL._UY675_.jpg" >
+						<b><br>Silver ring</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="180/-"><br><button type="submit" class="btn btn-info" name="item" value="Silver ring">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="data:image/jpeg;base64,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" >
+						<b><br>Beaded Bracelet</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="400/-"><br><button type="submit" class="btn btn-info" name="item" value="Beaded Bracelet">ADD TO CART<i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://cdn.shopify.com/s/files/1/0140/0245/4586/files/welding_27a52464-6d10-4f31-8e01-05f2e9626e13.jpg?v=1664529397&width=880" >
+						<b><br>Dainty bracelet</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="600/-"><br><button type="submit" class="btn btn-info" name="item" value="Dainty bracelet">ADD TO CART<i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://img1.etsystatic.com/160/1/10495178/il_fullxfull.1166366519_l8id.jpg">
+						<b><br>Leaf Bracelet</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="550/-"><br><button type="submit" class="btn btn-info" name="item" value="Leaf Bracelet">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="http://s3.weddbook.com/t4/2/2/3/2239183/gold-leaf-stud-earrings-leaf-earrings-bridesmaid-gift-minimal-jewelry-stainless-steel-posts-or-925-sterling-silver-post.jpg">
+						<b><br>Leaf Studs</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="150/-"><br><button type="submit" class="btn btn-info" name="item" value="Leaf Studs">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://images-cdn.ubuy.co.in/6JX234OW-2pcs-butterfly-ear-cuff-earrings-for.jpg" >
+						<b><br>Butterfly EarCuffs</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="300/-"><br><button type="submit" class="btn btn-info" name="item" value="Butterfly EarCuffs">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://img0.etsystatic.com/100/4/6338131/il_fullxfull.831338410_7dp5.jpg">
+						<b><br>Crystal pearl hairpins</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="200/-"><br><button type="submit" class="btn btn-info" name="item" value="Crystal pearl hairpins">ADD TO CART<i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://assets.ajio.com/medias/sys_master/root/20220913/FnxC/63203909f997dd1f8df8ecdf/-473Wx593H-463283952-white-MODEL.jpg">
+						<b><br>Gold Plated Necklace</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="2000/-"><br><button type="submit" class="btn btn-info" name="item" value="Gold Plated Necklace">ADD TO CART<i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXDha2jInhzzbnr5LIJzlOsuoDOAYd3tcRuf3vSxdL4-_H0Atc">
+						<b><br>Heart and star  charm bangles</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="400/-"><br><button type="submit" class="btn btn-info" name="item" value="Heart and star  charm bangles">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://t1.gstatic.com/images?q=tbn:ANd9GcSW9o4q833nMA637N0yAZsvfe-YWh4R2J1G9noAnl-ffu8TbYJh">
+						<b><br>Hoop Earrings</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="200/-"><br><button type="submit" class="btn btn-in" name="item" value="Hoop Earrings">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://i.pinimg.com/originals/21/d9/79/21d9794ad3f3fd253379474f8b5a581e.png">
+						<b><br>lollipop drop earrings</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="230/-"><br><button type="submit" class="btn btn-info" name="item" value="lollipop drop earrings">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://t1.gstatic.com/images?q=tbn:ANd9GcS1aiI3uxOmw_Oc5EnMUwjew_DuGHbFi3n70sUK9v2p9CdD56kz">
+						<b><br>Minimalistic Bracelets</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="410/-"><br><button type="submit" class="btn btn-info" name="item" value="Minimalistic Bracelets">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://t1.gstatic.com/images?q=tbn:ANd9GcTvLubUFVDPGTGIOA1Kse10iF_Ja6x93zNm_HjpToniIzoIr3_I">
+						<b><br>Pearl Earrings</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="450/-"><br><button type="submit" class="btn btn-info" name="item" value="Pearl Earrings">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://brightjewelers.com/wp-content/uploads/2014/01/Ladies-14k-White-Gold-Diamonds-Dangle-Pearl-Pendant-wChain2.jpg">
+						<b><br>Pearl pendant chain</b><br>
+			            <form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="699/-"><br><button type="submit" class="btn btn-info" name="item" value="Pearl pendant chain">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFIJ8pVFrgnJcYqAv2yYN74ukJh14BiwzyzNLC8FWXUviYc6oU">
+						<b><br>Silver Flower Bracelet</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="455/-"><br><button type="submit" class="btn btn-info" name="item" value="Silver Flower Bracelet">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://t1.gstatic.com/images?q=tbn:ANd9GcQB5mGJF8tniiGATQ-AJIjuXmqD_gtDH3iHU8MBBY0feQ2FPjVt">
+						<b><br>Tear Drops Necklace</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="900/-"><br><button type="submit" class="btn btn-info" name="item" value="Tear Drops Necklace">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://cdn-image.realsimple.com/sites/default/files/1557267330/minimal-engagement-rings-vrai-and-oro.jpg">
+						<b><br>Triangle ring</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="315/-"><br><button type="submit" class="btn btn-info" name="item" value="Triangle ring">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://img2.cgtrader.com/items/919638/7d03073bd9/classic-minimal-design-engagement-ring-with-diamond-3d-model-obj-mtl-3ds-fbx-stl-3dm.jpg">
+						<b><br>Classic ring</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="300/-"><br><button type="submit" class="btn btn-info" name="item" value="Classic ring">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://i.pinimg.com/736x/59/61/f7/5961f7bb9693893de0564563e3b671b8.jpg">
+						<b><br>Neclace set</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1000/-"><br><button type="submit" class="btn btn-info" name="item" value="Necklace set">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://s.cdnmpro.com/878106071/p/l/2/minimal-rings-designer-turkish-silver-jewelry-wholesale~902.jpg">
+						<b><br>Turkish ring</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="350/-"><br><button type="submit" class="btn btn-info" name="item" value="Turkish ring">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://cdn.shopify.com/s/files/1/0090/5455/2128/products/afrartgallery_brass_earrings_agate_Persian_jewelry_1024x1024@2x.jpg?v=1604613436">
+						<b><br>Persian earrings</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="221/-"><br><button type="submit" class="btn btn-info" name="item" value="Persian earrings">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://magnoliaeastgosford.com.au/wp-content/uploads/Black-Bead-Fashion-Earrings.jpeg">
+						<b><br>Black-Bead-Fashion-Earrings</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="147/-"><br><button type="submit" class="btn btn-info" name="item" value="Black-Bead-Fashion-Earrings">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded"  src="https://i.pinimg.com/originals/dc/60/f2/dc60f29bb8d9b1b7989b57f6ed343120.jpg">
+						<b><br>White Pearl head band</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="189/-"><br><button type="submit" class="btn btn-info" name="item" value="White Pearl head band">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded"  src="https://climg8.bluestone.com/f_jpg,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIPM0021X05_YAA18DIG6XXXXXXXX_ABCD00-PICS-00004-1024-21887.png">
+						<b><br>Nose Pin</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="213/-"><br><button type="submit" class="btn btn-info" name="item" value="Nose Pin">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded"  src="https://cdn.shopify.com/s/files/1/1991/7399/products/Chennamma_1000x.jpg?v=1601532051">
+						<b><br>Minimal Maangtikka</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="390/-"><br><button type="submit" class="btn btn-info" name="item" value="Minimal Maangtikka">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded"  src="https://www.inmindjewellery.com/wp-content/uploads/black-agate-triple-mini-cosmo-beaded-bracelet-1.jpg">
+						<b><br>Black Beaded Bracelet</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="340/-"><br><button type="submit" class="btn btn-info" name="item" value="Black Beaded Bracelet">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+						
+
+                </div><br><br>
+				<form action="cart" method="GET">
+					<center><input type="submit"  style="width:30%;font-weight: bold ;background-color:rgb(154, 179, 230);" value="GO TO CART"></center>
+				</form><br><br>
+            </div>
+		</body>
+</html>
